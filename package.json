@@ -1,24 +1,33 @@
 {
   "name": "nodebb-plugin-mentions-notifier",
-  "version": "0.2.2",
-  "nbbpm": {
-    "compatibility": "^1.3.0"
-  },
-  "description": "Post mention Notifications",
-  "main": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ExpediaDotCom/nodebb-plugin-mentions-notifier.git"
-  },
-  "author": {
-    "name": "Expedia Forum Integration Team",
-    "email": "<ewe-forum-slack@expedia.com>"
-  },
+  "version": "0.2.3",
+  "description": "NodeBB plugin that posts mention notifications to endpoints, like slack",
+  "main": "library.js",
   "scripts": {
     "eslint": "eslint --ignore-path .gitignore .",
     "test": "NODE_ENV=dev ./node_modules/.bin/istanbul cover -x \"tests/*\" ./node_modules/.bin/_mocha -- ./tests -t 100000"
   },
-  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExpediaDotCom/nodebb-plugin-mentions-notifier"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "notification",
+    "mention"
+  ],
+  "author": {
+    "name": "Expedia Forum Integration Team",
+    "email": "<ewe-forum-slack@expedia.com>"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/ExpediaDotCom/nodebb-plugin-mentions-notifier/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^1.3.0"
+  },
   "dependencies": {
     "async": "~1.5.0",
     "xregexp": "3.2.0",
@@ -38,24 +47,5 @@
     "mocha": "~1.13.0",
     "string": "^3.0.0",
     "validator": "^5.0.0"
-  },
-  "bugs": {
-    "url": ""
-  },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "notification",
-    "mention"
-  ],
-  "license": "Apache 2.0",
-  "_npmUser": {
-    "name": ""
-  },
-  "maintainers": [
-    {
-      "name": "",
-      "email": ""
-    }
-  ]
+  }
 }
