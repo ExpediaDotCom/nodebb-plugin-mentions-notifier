@@ -1,0 +1,16 @@
+{
+	"id": "nodebb-plugin-notifier",
+	"name": "NodeBB Notifier",
+	"description": "NodeBB plugin that posts mention notifications to endpoints, like slack.",
+	"url": "https://ewegithub.sb.karmalab.net/maldmour/nodebb-plugin-mentions-notifier#readme",
+	"library": "library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "action:notification.pushed", "method": "notificationPushed" }
+	],
+	"acpScripts": [
+		"static/admin.js"
+	],
+	"templates": "templates"
+}

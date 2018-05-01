@@ -1,0 +1,34 @@
+{
+    "env": {
+        "browser": false,
+        "es6": true,
+        "node": true,
+        "mocha": true,
+        "amd": true
+    },
+    "extends": "airbnb",
+    "parserOptions": {
+        "sourceType": "module",
+        "callback-return":"error"
+    },
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-multi-str": 0
+    }
+}
