@@ -24,14 +24,14 @@ $ npm link
 ```
 
 3- Go to your nodebb directory, then:
-`$ npm link /path/to/nodebb-plugin-mention-notifier`
+`$ npm link /path/to/nodebb-plugin-mentions-notifier`
 
 4- Start DB server, then start the Nodebb server:
 `$ ./nodebb start`
 
 5- Open a browser window, login as admin and navigate to http://localhost:4567/admin/extend/plugins.
 
-6- Activate the nodebb-plugin-notifier plugin.
+6- Activate the nodebb-plugin-mentions-notifier plugin.
 
 7- From your nodebb directory:
 ```
